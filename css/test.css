@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+.img img {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 14%;
+}
