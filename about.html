@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 </head>
 <body>
 
@@ -35,17 +34,10 @@
     </div>
 
     <div class="profile">
-        <h1> <span>01</span> PROFILE</h1>
+        <h1 class="profile_h1"> PROFILE</h1>
         <div class="about_text">
-            <div class="name">
-                <h2>ABOUT</h2>
-                <p>이름 : 김서희</p>
-                <p>생년월일 : 1999.09.28</p>
-                <p>연락처 : 010.5749.9017</p>
-                <p>이메일 : kimseohee1210@gmail.com</p>
-                <p>주소 : 경기도 김포시</p>
-            </div>
-            <div class="who">
+            <div class="who" data-aos="fade-down"
+            data-aos-duration="2000">
                 <h2>WHO I'M?</h2>
                 <p>넘치는 꿈, 타오르는 열정을 가진 김서희입니다. <br>
                     한 가지 일을 계속 하기보다는 새로운 일에 도전하기를 <br>
@@ -58,21 +50,46 @@
 
                 </p>
             </div>
-            <div class="skill">
+            <div class="skill" data-aos="fade-down"
+            data-aos-duration="3000">
                 <h2>SKILLS</h2>
                 <p><span>○</span>PHOTOSHOP, ILLUSTRATOR, ADOBE XD</p>
                 <p><span>○</span>HTML5 웹표준, 웹접근성</p>
                 <p><span>○</span>CSS, JQuery, Javascript</p>
                 <p><span>○</span>BOOTSTRAP</p>
+                <p><span>○</span>Github</p>
                 <p><span>○</span>워드프레스, 그누보드</p>
             </div>
         </div>
+        <div class="info">
+            <div id="slide_wrap">
+                <div class="slide_box">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/photo_1.jpg" alt="슬라이드1"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/photo_2.jpg" alt="슬라이드2"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/photo_3.jpg" alt="슬라이드3"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="name" data-aos="fade-down"
+            data-aos-duration="1000">
+                <h2>ABOUT</h2>
+                <p>이름 : 김서희</p>
+                <p>생년월일 : 1999.09.28</p>
+                <p>연락처 : 010.5749.9017</p>
+                <p>이메일 : kimseohee1210@gmail.com</p>
+                <p>주소 : 경기도 김포시</p>
+            </div>
+        </div>
+            
+            
     </div>
-
-<div class="about_img">
-      <img src="images/김서희_1.jpg" alt="">
-    </div>
-
     <script src="js/js.js"></script>
 </body>
 </html>

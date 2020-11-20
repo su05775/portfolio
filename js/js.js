@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["웹 퍼블리셔", "웹 디자이너"];
+const textArray = ["Web Publisher", "Web Designer"];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 1000; // Delay between current and next text
@@ -52,22 +52,19 @@ $('#toggle').click(function() {
 AOS.init();
 // aos
 
-
 $(function(){
-  setInterval(function(){
-      $(".slide_box").delay("2500");
-      $(".slide_box").animate({
-          marginTop: "-500px"
-      }, "500");
-      $(".slide_box").delay("2500");
-      $(".slide_box").animate({
-          marginTop: "-1000px"
-      }, "500");
-      $(".slide_box").delay("2500");
-      $(".slide_box").animate({
-          marginTop: "0"
-      }, "500");
-  });
+    setInterval(function(){
+        $(".slide_box").delay("2500");
+        $(".slide_box").animate({
+            marginTop: "-500px"
+        }, "500");
+        $(".slide_box").delay("2500");
+        $(".slide_box").animate({
+            marginTop: "-1000px"
+        }, "500");
+        $(".slide_box").delay("2500");
+        $(".slide_box").animate({
+            marginTop: "0"
+        }, "500");
+    });
 });
-// slide
-

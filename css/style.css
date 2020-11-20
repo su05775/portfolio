@@ -1,4 +1,16 @@
 @font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'GmarketSansLight';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
     font-weight: normal;
@@ -10,47 +22,191 @@ html {
 	overflow: hidden;
 }
 
-#slide_wrap {
-    clear: both;
+.top {
 	width: 100%;
-	height: 500px;
-    overflow: hidden;
-	margin-left: 38%;
-	margin-top: 7%;
+	height: 340px;
+	background: url(../images/main_2.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+}
+.bottom {
+	width: 100%;
+	height: 355px;
+	background: url(../images/main_1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
 }
 
-.slide_box {
-    overflow: hidden;
+.angle_1 {
+	width: 191px;
+	height: 190px;
+	background: url(../images/angle_1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 16%;
+	left: 20%;
 }
-.slide_box>ul>li>a>img {
-    display: block;
-	border: 0;
-	width: 500px;
-	height: 500px;
-    transition: 1s;
+.angle_2 {
+	width: 191px;
+	height: 190px;
+	background: url(../images/angle_2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 25%;
+	bottom: 20%;
 }
+
+.o_1 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/o_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 5%;
+	top: 30%;
+}
+.o_2 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/o_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 10%;
+	top: 10%;
+}
+.o_3 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/o_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	bottom: 5%;
+	left: 15%;
+}
+
+.x_1 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/x_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 15%;
+	top: 8%;
+	animation: rotate_image_2 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+.x_2 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/x_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	bottom: 25%;
+	right: 5%;
+	animation: rotate_image_1 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+.x_3 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/x_1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 22%;
+	right: 28%;
+	animation: rotate_image_2 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.w_1 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/w.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	animation: rotate_image_1 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+.w_2 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/w.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	bottom: 30%;
+	left: 30%;
+	animation: rotate_image_2 5s linear infinite;
+    transform-origin: 50% 50%;
+}
+.w_3 {
+	width: 30px;
+	height: 30px;
+	background: url(../images/w.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	bottom: 10%;
+	right: 35%;
+	animation: rotate_image_1 5s linear infinite;
+	transform-origin: 50% 50%;
+
+}
+
+@keyframes rotate_image_1{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+@keyframes rotate_image_2{
+	100% {
+    	transform: rotate(-360deg);
+    }
+}
+
 
 /* Typing */
 .container {
     width: 100%;
-	position: relative;
-	left: 39%;
+	height: 250px;
   }
   .container p {
     font-size: 3.2rem;
-    padding: 0.5rem;
-    letter-spacing: 0.1rem;
-    text-align: left;
+    text-align: center;
     overflow: hidden;
-    color: #444;
-	font-family: 'GmarketSansLight';
-	margin-left: 3%;
-	margin-top: 2%;
+    color: #333;
+	font-family: 'GmarketSansBold';
+	margin-left: 2%;
+	margin-top: 3%;
 }
   .container p span.typed-text {
     font-weight: normal;
-    color: #335b79;
-    font-family: 'GmarketSansLight';
+    color: #b5b6e6;
+    font-family: 'GmarketSansBold';
   }
   .container p span.cursor {
     display: inline-block;
@@ -75,14 +231,14 @@ html {
 
 /* MENU Start */
 .button_container {
-	 position: fixed;
-	 top: 5%;
-	 right: 3%;
-	 height: 27px;
-	 width: 50px;
-	 cursor: pointer;
-	 z-index: 100;
-     transition: opacity 0.25s ease;
+	position: fixed;
+	top: 9%;
+	right: 3%;
+	height: 27px;
+	width: 50px;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity 0.25s ease;
 }
 .button_container:hover {
 	 opacity: 0.7;
@@ -100,7 +256,7 @@ html {
 	 background: #fff;
 }
 .button_container span {
-	 background: #2f7cb6;
+	 background: #222;
 	 height: 3px;
 	 width: 100%;
 	 position: absolute;
@@ -220,4 +376,8 @@ html {
     margin: 0 auto;
 	padding-top: 26%;
 	padding-left: 50%;
+}
+
+@media (max-width:767px) {
+	
 }
